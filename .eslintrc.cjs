@@ -8,6 +8,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime",
   ],
   settings: { react: { version: "detect" } },
   overrides: [],
@@ -22,7 +23,6 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
-    "react/react-in-jsx-scope": "off",
     "react/jsx-no-target-blank": "off",
   },
 };
