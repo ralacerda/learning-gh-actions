@@ -5,6 +5,9 @@ name: ci
 
 on:
   push:
+    paths-ignore:
+      - README.md
+      - ".github/**"
     branches:
       - main
   pull_request:
