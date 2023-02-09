@@ -19,7 +19,7 @@ function App() {
       <div className="card">
         <button
           data-testid="counter"
-          onClick={() => setCount((count) => count + 0)}
+          onClick={() => setCount((count) => count + 1)}
         >
           count is {count}
         </button>
