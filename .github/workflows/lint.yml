@@ -1,0 +1,27 @@
+# This is based on:
+# https://github.com/unjs/nitro/blob/main/.github/workflows/ci.yml
+
+name: lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - run: corepack enable
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: pnpm
+      - run: pnpm install
+      - run: pnpm lint
