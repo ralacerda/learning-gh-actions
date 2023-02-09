@@ -4,3 +4,4 @@
 A small repo for me to practice creating github actions. I'm learning in public.
 
 - [X] Test with Vitest and Lint
+- [ ] Badge
