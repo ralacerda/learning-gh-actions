@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint --cache --ext .tsx,.cjs,jsx . && prettier -c src",
+    "lint": "eslint --cache --ext .tsx,.cjs,jsx,.js,.ts . && prettier -c src",
     "preview": "vite preview"
   },
   "dependencies": {
