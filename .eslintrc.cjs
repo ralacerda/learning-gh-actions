@@ -9,6 +9,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
   ],
+  settings: { react: { version: "detect" } },
   overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -21,5 +22,7 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-no-target-blank": "off",
   },
 };
